@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+   
+    <form>
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name"placeholder="enter firstname">
+        <br><br>
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name"placeholder="enter lastname"><br><br>
+        <label for="mobile">Mobile Number</label>
+        <input type="number" id="mobile"placeholder="enter mobile number" maxlength="10" minlength="10"><br><br>
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" placeholder="enter dob" min="2012-12-12" max="2024-08-13" ><br><br>
+        
+        <label for="city">Choose city</label>
+        <select id="city">
+            <option selected>Choose correct city</option>
+            <option>Kolkata</option>
+            <option>Siliguri</option>
+            <option>Barasat</option>
+            <option>Medinipur</option>
+        </select><br><br>
+        <label for="pin">Pin</label>
+        <input type="number" id="pin" placeholder="enter area pin" minlength="6" maxlength="6" oninput="this.value = this.value.slice(0, 6);" ><br><br>
+        <label for="rad">Do you agree?</label>
+        <input type="radio" name="agreeornot">Yes
+        <input type="radio" name="agreeornot">No<br><br>
+        <label for="address">Address</label>
+        <textarea id="address" rows="5" cols="50" placeholder="enter your address" maxlength="500"  style="resize: horizontal; overflow: auto;"></textarea><br>
+        <br>
+        <label for="pass">Enter your password</label>
+        <input type="password" maxlength="8" placeholder="enter password"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <button style="margin-top: 10px;"><a href="/assignment2/assignment2.html" style="text-decoration: none;">Home</a></button>
+   
+</body>
+</html>
